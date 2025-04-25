@@ -18,14 +18,8 @@ header {
     overflow: hidden;
   }
   
-  h1.one984 {
+  .one984 {
     font-family: "Shadows Into Light";
-    color: white;
+    fill: white;
     font-size: 3rem;
   }
-  
-  .eye {
-    position: absolute;
-    z-index: -1;
-  }
-  
