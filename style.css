@@ -1,4 +1,4 @@
-body {
+header {
     width: 100vw;
     height: 100vh;
     background-color: #e70606;
@@ -9,7 +9,7 @@ body {
     overflow: hidden;
   }
   
-  h1 {
+  h1.one984 {
     font-family: "Shadows Into Light";
     color: white;
     font-size: 3rem;
