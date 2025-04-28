@@ -34,8 +34,7 @@ header {
   background-color: aqua;
   width: calc(100% / 4);
   height: 15em;
-  padding: 10px;
-  margin-left: 0.5;
+  margin-left: 0.5em;
   margin-right: 0.5em;
   margin-top: 1em;
 }
