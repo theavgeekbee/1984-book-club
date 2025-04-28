@@ -32,10 +32,11 @@ header {
 
 .row-container > div {
   background-color: aqua;
-  width: calc(100vw / 4);
+  width: calc(100% / 4);
   height: 15em;
   padding: 10px;
-  margin: 0.5em;
+  margin-left: 1em;
+  margin-right: 0.5em;
   margin-top: 1em;
 }
 
@@ -43,6 +44,13 @@ header {
   margin-left: 1em;
 }
 
-.element2 { 
+.element4 { 
   margin-right: 1em;
+}
+
+.vid_wrapper {
+  width: 100%;
+  height: 20em;
+  margin: 1em;
+  background-color: aqua;
 }
