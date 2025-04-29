@@ -59,3 +59,13 @@ header {
   margin: 1em;
   background-color: aqua;
 }
+
+.author {
+  font-size: 1em;
+  font-family: monospace;
+  color: white;
+  font-weight: bold;
+  padding-right: 20px;
+  width: 100%;
+  text-align: right;
+}
