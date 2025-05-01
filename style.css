@@ -76,8 +76,5 @@ main {
 .video {
   width: fit-content;
   height: fit-content;
-  margin: auto;
-  margin: 1em;
-  background-color: aqua;
-
+  margin: auto !important;
 }
