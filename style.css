@@ -98,3 +98,18 @@ main {
   height: fit-content;
   padding: 20px;
 }
+
+.skibidi-link {
+ color: #ffffff;
+  text-decoration: none;
+  padding: 0.2rem;
+  border: 2px dashed #ffffff;
+  border-radius: 10px;
+  transition: color 0.2s ease-in-out;
+}
+a.skibidi-link:hover {
+  color: #7abaff;
+  border: 2px solid #7abaff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
