@@ -77,4 +77,13 @@ main {
   width: fit-content;
   height: fit-content;
   margin: auto !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.video_desc {
+  background-color: #e70606;
+  width: 20em;
+  color: white;
+  padding: 20px;
 }
