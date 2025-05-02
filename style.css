@@ -50,14 +50,11 @@ main {
   justify-content: center;
 }
 
-
-
 .biographies {
   display: flex;
   flex-direction: row;
   margin: 1em;
 }
-
 
 .biographies > div {
   background-color: #4a4d52;
@@ -67,6 +64,10 @@ main {
   height: 20em;
   margin-left: 0.5em;
   margin-right: 0.5em;
+}
+
+h1, h2 {
+  font-family: "Cal Sans";
 }
 
 .bio1 {
@@ -83,11 +84,11 @@ main {
   margin: auto !important;
   display: flex;
   flex-direction: row;
+  margin: 1em !important;
 }
 
 .video_desc {
   background-color: #e70606;
-  width: 20em;
   color: white;
   padding: 20px;
 }
