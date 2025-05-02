@@ -50,6 +50,8 @@ main {
   justify-content: center;
 }
 
+
+
 .biographies {
   display: flex;
   flex-direction: row;
@@ -85,5 +87,12 @@ main {
   background-color: #e70606;
   width: 20em;
   color: white;
+  padding: 20px;
+}
+
+.deepdive2 {
+  background-color: cyan;
+  margin: 1em;
+  height: fit-content;
   padding: 20px;
 }
