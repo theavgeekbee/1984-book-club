@@ -60,8 +60,10 @@ main {
 
 
 .biographies > div {
-  background-color: aqua;
+  background-color: #4a4d52;
+  color: white;
   width: calc(100% / 4);
+  padding: 15px;
   height: 20em;
   margin-left: 0.5em;
   margin-right: 0.5em;
