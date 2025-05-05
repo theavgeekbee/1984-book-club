@@ -64,6 +64,8 @@ main {
   height: 20em;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2 {
@@ -101,7 +103,10 @@ h1, h2 {
 }
 
 .skibidi-link {
- color: #ffffff;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
   text-decoration: none;
   padding: 0.2rem;
   border: 2px dashed #ffffff;
