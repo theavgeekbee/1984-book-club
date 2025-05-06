@@ -81,7 +81,7 @@ h1, h2 {
 }
 
 .video {
-  height: fit-content;
+  height: 30em;
   display: flex;
   flex-direction: row;
   justify-self: center;
@@ -94,6 +94,9 @@ h1, h2 {
   color: white;
   padding: 20px;
   width: 100%;
+  overflow-y: scroll;
+  height: 30em;
+  text-indent: 30px;
 }
 
 .skibidi-link {
@@ -148,9 +151,9 @@ a.skibidi-link:hover {
 
 .panel {
   padding: 18px;
-  padding-top: 25px;
-  background-color: #e70606;
-  color: white;
+  padding-top: 30px;
+  background-color: white;
+  color: black;
   overflow: hidden;
   padding: 0 18px;
   max-height: 0;
@@ -159,18 +162,21 @@ a.skibidi-link:hover {
   width: 100%;
 }
 
+.panel > p {
+  padding-top: 20px;
+}
 
 .accordion:after {
+  color: white !important;
   content: '\02795';
   font-size: 13px;
-  color: white;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
+  color: white !important;
   content: "\2796";
-  color: white;
 }
 
 .container {
@@ -180,10 +186,29 @@ a.skibidi-link:hover {
   margin: 100px;
 }
 
+footer {
+  background-color: #e70606;
+  color: white;
+  width: 100vw;
+  height: fit-content;
+  margin: 0;
+}
+
+.footer_wrapper {
+  margin: 1em;
+}
+
+footer > p {
+  padding: 5px;
+  margin: 0;
+}
+
+/* Cube styles */
+
 .cube {
   margin: auto;
   margin-right: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: 100px;
   height: 100px;
   transform-style: preserve-3d;
