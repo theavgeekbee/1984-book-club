@@ -63,7 +63,7 @@
         </div>
       </section>
       <section class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QHsVF5XJFWI?si=yKlVXExVn48pKORf" title="YouTube video player" frameborder="0" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/QHsVF5XJFWI?si=yKlVXExVn48pKORf" title="YouTube video player" frameborder="0" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="video_desc">
             <h2>placeholder</h2>
             <p>Put some stuff here or somthing. It should maybe be about the video. Just a thought.</p>
@@ -71,9 +71,22 @@
             <p>Heres a second section because i dont know what to write but need to see how it will look. :/</p>
           </div>
       </section>
-      <section>
-        <div class="deepdive2">
-          deep dive #2
+      <section class="theme_accordion">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet. oh my god i hate javascript it is the devil's plaything and should be burned at the stake over a blazing pile of frameworks and next.js critical security bugs</p>
+        </div>
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet. oh my god i hate javascript it is the devil's plaything and should be burned at the stake over a blazing pile of frameworks and next.js critical security bugs</p>
+        </div>
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet. oh my god i hate javascript it is the devil's plaything and should be burned at the stake over a blazing pile of frameworks and next.js critical security bugs</p>
+        </div>
+        <button class="accordion">Section 4</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet. oh my god i hate javascript it is the devil's plaything and should be burned at the stake over a blazing pile of frameworks and next.js critical security bugs</p>
         </div>
       </section>
       <section class="literary-review">
@@ -83,5 +96,22 @@
       </section>
     </main>
   </body>
+  <script>
+    /* I have no idea how this works :) */
+    var acc = document.getElementsByClassName("accordion");
+  var i;
 
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null; // Collapse the panel
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px"; // Expand the panel
+      }
+    });
+  }
+  </script>
 </html>

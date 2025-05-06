@@ -1,19 +1,18 @@
 html {
-  margin: none;
-  padding: none;
   overflow-x: hidden
 }
 
 body {
-  width: 100vw;
   font-family: "Cal Sans", sans-serif;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 main {
-  justify-content: center;
+  max-width: max-content;
+  margin: 1em;
 }
 
 header {
@@ -24,6 +23,7 @@ header {
   justify-content: center;
   overflow: hidden;
   text-align: center;
+  width: 100vw;
 }
 
 .svg_lettering {
@@ -48,12 +48,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 1em;
 }
 
 .biographies {
   display: flex;
   flex-direction: row;
-  margin: 1em;
 }
 
 .biographies > div {
@@ -81,25 +81,19 @@ h1, h2 {
 }
 
 .video {
-  width: fit-content;
   height: fit-content;
-  margin: auto !important;
   display: flex;
   flex-direction: row;
-  margin: 1em !important;
+  justify-self: center;
+  margin-top: 1em ;
+  width: 100%;
 }
 
 .video_desc {
   background-color: #e70606;
   color: white;
   padding: 20px;
-}
-
-.deepdive2 {
-  background-color: cyan;
-  margin: 1em;
-  height: fit-content;
-  padding: 20px;
+  width: 100%;
 }
 
 .skibidi-link {
@@ -110,9 +104,60 @@ h1, h2 {
   border-radius: 10px;
   transition: color 0.2s ease-in-out;
 }
+
 a.skibidi-link:hover {
   color: #7abaff;
   border: 2px solid #7abaff;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+}
+
+.theme_accordion {
+  margin-top: 1em;
+}
+
+.accordion {
+  background-color: #4a4d52;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #83868b;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.panel {
+  padding: 18px;
+  padding-top: 25px;
+  background-color: #e70606;
+  color: white;
+  overflow: hidden;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 100%;
+}
+
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  color: white;
 }
