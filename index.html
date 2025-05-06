@@ -164,6 +164,15 @@
           </div>
         </div>
       </section>
+      <section class="inquiry_questions">
+        <div class="IQ_1">
+            <button class="accordion">Unfiltered Patriorism</button>
+            <div class="panel">
+              <p>Everyone is expected to sacrifice themselves  by any means necessary for the state.
+              </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer_wrapper">
@@ -172,23 +181,4 @@
       </div>
     </footer>
   </body>
-  <!--This isn't much better :(-->
-  <script>
-    /* I have no idea how this works :) */
-    var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null; // Collapse the panel
-      } else {
-        panel.style.maxHeight = "fit-content"; // Expand the panel
-      }
-    });
-  }
-  </script>
 </html>
