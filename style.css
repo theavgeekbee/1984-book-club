@@ -159,7 +159,6 @@ a.skibidi-link:hover {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.8s ease;
-  width: 100%;
 }
 
 .panel > p {
