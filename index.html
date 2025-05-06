@@ -71,31 +71,82 @@
             <p>Heres a second section because i dont know what to write but need to see how it will look. :/</p>
           </div>
       </section>
-      <section class="theme_accordion">
-        <button class="accordion">Section 1</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet. oh my god i hate javascript it is the devil's plaything and should be burned at the stake over a blazing pile of frameworks and next.js critical security bugs</p>
+      <!--Dont look at this, it's unholy and disgusting-->
+      <section class="comparison_accordion">
+        <div style="display: grid; grid-template-columns: auto auto; background-color: #e70606; color: white;">
+          <h1>Nazi Germany</h1><h1>Ingsoc</h1>
         </div>
-        <button class="accordion">Section 2</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet. oh my god i hate javascript it is the devil's plaything and should be burned at the stake over a blazing pile of frameworks and next.js critical security bugs</p>
-        </div>
-        <button class="accordion">Section 3</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet. oh my god i hate javascript it is the devil's plaything and should be burned at the stake over a blazing pile of frameworks and next.js critical security bugs</p>
-        </div>
-        <button class="accordion">Section 4</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet. oh my god i hate javascript it is the devil's plaything and should be burned at the stake over a blazing pile of frameworks and next.js critical security bugs</p>
-        </div>
-      </section>
-      <section class="literary-review">
-        <div class="literary-review">
-          literary review
+        <div style="display: grid; grid-template-columns: auto auto; justify-items: center; ">
+          <div class="germany">
+            <div>
+              <button class="accordion">Use of Propoganda (FIX TRANSITION)</button>
+              <div class="panel">
+                <p>Through propaganda nazi germany was able to justify their actions, tricking the populace into becoming ignorant and never questioning their actions.</p>
+              </div>
+            </div>
+            <div>
+              <button class="accordion">Book Burnings</button>
+              <div class="panel">
+                <p>Eradication of all forms of information leading to the objection of their actions which if gone continues the cycle of social oppression toward the jewish.</p>
+              </div>
+            </div>
+            <div>
+              <button class="accordion">Central Authoritative Leader</button>
+              <div class="panel">
+                <p>When power is within one fascist leader they take the rights of expression creating an ignorant population that cannot speak out for its problems. </p>
+              </div>
+            </div>
+            <div>
+              <button class="accordion">Hitler Youth</button>
+              <div class="panel">
+                <p>Brainwashing the youth with Nazi ideologies enables preservation of the ongoing cycle of systematic oppression</p>
+              </div>
+            </div>
+            <div>
+              <button class="accordion">Extreme Nationalism</button>
+              <div class="panel">
+                <p>They used nationalism as a cover up saying their actions were for the welfare of germany. </p>
+              </div>
+            </div>
+          </div>
+          <div class="ingsoc">
+            <div>
+              <button class="accordion">Doublethink</button>
+              <div class="panel">
+                <p>A method of indoctrination, where one is subjected to believing two conflicting ideas at the same time with close, fabricated lies.</p>
+              </div>
+            </div>
+            <div>
+              <button class="accordion">Ministry of Truth</button>
+              <div class="panel">
+                <p>Branch of government responsible for constant  erasure and disinformation fed to the public, in order to glorify the party and to restrict information. Use the “memory-hole” as burning unwanted or harmful information to the party.</p>
+              </div>
+            </div> 
+            <div>
+              <button class="accordion">Central Authoritative Leader</button>
+              <div class="panel">
+                <p>Big Brother, the supreme leader of the party, who has been hailed to be the head of Oceania, through decades of propaganda and cultural influences</p>
+              </div>
+            </div>
+            <div>
+              <button class="accordion">The Spies</button>
+              <div class="panel">
+                <p>The method in which the party preserves its ideologies to continue the cycle of oppression in the society of oceania. </p>
+              </div>
+            </div>
+            <div>
+              <button class="accordion">Unfiltered Patriorism</button>
+              <div class="panel">
+                <p>Everyone is expected to sacrifice themselves  by any means necessary for the state.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
   </body>
+  <!--This isn't much better :(-->
   <script>
     /* I have no idea how this works :) */
     var acc = document.getElementsByClassName("accordion");
@@ -109,7 +160,7 @@
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null; // Collapse the panel
       } else {
-        panel.style.maxHeight = panel.scrollHeight + "px"; // Expand the panel
+        panel.style.maxHeight = "fit-content"; // Expand the panel
       }
     });
   }

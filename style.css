@@ -44,7 +44,7 @@ header {
 }
 
 main {
-  width: 100vw;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,12 +112,23 @@ a.skibidi-link:hover {
   transition: color 0.2s ease-in-out;
 }
 
-.theme_accordion {
+.comparison_accordion {
   margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison_accordion > div > h1 {
+  background-color: #e70606;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
 }
 
 .accordion {
   background-color: #4a4d52;
+  font-size: 16pt;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -144,13 +155,13 @@ a.skibidi-link:hover {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.8s ease;
   width: 100%;
 }
 
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795';
   font-size: 13px;
   color: white;
   float: right;
@@ -158,6 +169,6 @@ a.skibidi-link:hover {
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796";
   color: white;
 }
