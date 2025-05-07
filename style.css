@@ -54,7 +54,7 @@ main {
 .biographies {
   display: flex;
   flex-direction: row;
-  height: fit-content;
+  height: 30em;
 }
 
 .biographies > div {
