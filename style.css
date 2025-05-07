@@ -202,3 +202,71 @@ footer > p {
   padding: 5px;
   margin: 0;
 }
+
+.tabs-container {
+  margin: 1em;
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Styling for the list of tab buttons */
+.tabs-list {
+  display: flex; /* Arrange buttons in a row */
+  border: 1px solid #ccc;
+  background-color: #e70606; /* Light background for the tab list */
+  justify-content: space-between;
+}
+
+/* Styling for individual tab buttons */
+.tabs-trigger {
+  padding: 10px;
+  border: none; /* Remove default button border */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer; /* Indicate clickability */
+  font-size: 1rem; /* Font size */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+  outline: none; /* Remove outline on focus */
+  position: relative; /* Needed for the active indicator */
+ 
+  margin: 8px;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+}
+h2 {
+  margin: 0;
+}
+
+/* Hover effect for tab buttons */
+.tabs-trigger:hover {
+  background-color: #c41414; /* Slightly darker background on hover */
+}
+
+/* Styling for the active tab button */
+.tabs-trigger.selected {
+  background-color: #a60d0d;
+  font-weight: bold; /* Make active tab text bold */
+}
+
+/* Styling for the tab content areas */
+.tabs-content {
+  display: none; /* Hide all content by default */
+  margin-top: 16px;
+}
+
+/* Styling for the active tab content */
+.tabs-content.selected {
+  display: block; /* Show the active tab content */
+}
+
+/* --- Card Styling (for demo content) --- */
+.tab-card {
+  background-color: #4a4d52;
+  color: white;
+  margin-bottom: 16px; /* Space below the card */
+}
+
+.card-content {
+  padding: 16px; /* Padding in content area */
+}
+
+
