@@ -214,6 +214,7 @@ footer > p {
   border: 1px solid #ccc;
   background-color: #e70606; /* Light background for the tab list */
   justify-content: space-between;
+  margin-bottom: 1em;
 }
 
 /* Styling for individual tab buttons */
