@@ -269,4 +269,60 @@ h2 {
   padding: 16px; /* Padding in content area */
 }
 
+.lit_analysis {
+  margin: 0 1em 0 1em;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
 
+.card {
+  margin: 0 2em 0 2em;
+  width: 15rem;
+  aspect-ratio: 9/16;
+  background-color: red;
+  border: none;
+}
+
+.card {
+  background-color: transparent;
+  width: 15rem;
+  aspect-ratio: 9/16;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card_front, .card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.card:hover .card_inner {
+  transform: rotateY(180deg);
+}
+
+.card_back {
+  background-color: #e70606;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
